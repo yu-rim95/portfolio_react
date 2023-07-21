@@ -1,0 +1,23 @@
+// 공통색상선언
+$color-light: (
+  "background-": #fff,
+  "textcolor": #000,
+);
+$color-dark: (
+  "background-": #121212,
+  "textcolor": #fff,
+);
+
+
+
+// 모드별 색상
+.App {
+  @each $background-, $color in $color-light {
+    --#{$background-}: #{$color};
+  }
+}
+.App.dark-mode {
+  @each $background-, $color in $color-dark {
+    --#{$background-}: #{$color};
+  }
+}
