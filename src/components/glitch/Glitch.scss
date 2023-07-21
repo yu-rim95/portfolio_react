@@ -4,7 +4,15 @@
     position:relative;
     width: 50%;
     margin:200px auto;
+    @media (max-width: 768px) {
+        color: var(--textcolor);
+        font-size: 2.5rem;
+        position: relative;
+        transform: translate(-50%, 50%);
+        font-weight: bold;
+      }
   }
+
   @keyframes noise-anim{
     $steps:20;
     @for $i from 0 through $steps{
