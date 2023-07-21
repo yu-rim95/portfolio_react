@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.scss';
 import Header from './components/header/Header';
-
+import Main from './components/main/Main';
 
 function App() {
   // 로컬 스토리지에서 저장된 다크모드 상태를 불러오기
@@ -20,6 +20,7 @@ function App() {
   return (
     <div className={`App ${darkMode ? 'dark-mode' : ''}`}>
       <Header darkMode={darkMode} onDarkModeToggle={handleDarkModeToggle} />
+      <Main/>
     </div>
   );
 }

@@ -1,0 +1,30 @@
+// Main.scss
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--background-);
+    color: var(--textcolor);
+    &.section1 {
+      
+    }
+  
+    &.section2 {
+    }
+  
+    &.section3 {
+
+    }
+  
+  }
+  
+  // 페이지 내비게이션 스타일 설정
+.rfp__navigation {
+    position: fixed;
+    z-index: 100;
+    bottom: 20px;
+    right: 20px;
+  
+  }
